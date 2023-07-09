@@ -18,7 +18,9 @@ const Details = () => {
 
   return (
     <div className='text-center'>
-      <h2 className='text-info'>{currentDestination.name}</h2>
+      <h2 className='text-info'>
+        {currentDestination && currentDestination.name}
+      </h2>
       <div className='row py-5'>
         {currentDestination && (
           <>
